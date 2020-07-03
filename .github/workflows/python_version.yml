@@ -11,8 +11,7 @@ jobs:
     runs-on: self-hosted
     strategy:
       matrix:
-        # in this example, there is a newer version already installed, 3.7.7, so the older version will be downloaded
-        python-version: [3.6]
+        python-version: [3.6.11]
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-python@v2
