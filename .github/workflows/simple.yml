@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  simple:
 
     runs-on: self-hosted
     steps:
