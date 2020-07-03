@@ -1,0 +1,21 @@
+name: Simple Workflow
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install poetry
+      run: |
+        hostname
+        whoami
+        date
+        ls -asl
+        
